@@ -158,6 +158,10 @@ def create_dataset_split(current_dataset, raw_dataset, train_phase, tokenizer,
     prompt_dataset = []
     chosen_dataset = []
     reject_dataset = []
+
+    # temp settings
+    train_phase = 3
+
     if train_phase == 1:
         for i, tmp_data in enumerate(current_dataset):
             # tokenize the text
